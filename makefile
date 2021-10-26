@@ -1,6 +1,6 @@
 #makefile to make EZ
 
-all:	ez ezu
+all:	ez ezu ezkill
 ezu:	ezm.o ezu.o ezuref1.o ezuiovt.o
 	cc -o ezu ezm.o ezu.o ezuref1.o ezuiovt.o -ltermcap
 #	cc  -o ezu  ezm.o ezu.o ezuref1.o ezuiovt.o -lbsd -ltermcap
@@ -18,6 +18,8 @@ ezuref1.o:	ez.h  ezuref1.c
 
 ezuiovt.o:	ez.h  ezuiovt.c
 		cc -c -w ezuiovt.c
+ezkill:		ezkill.o ez.h
+		cc -o -w -g ezkill ezkill.c
 
 
 
