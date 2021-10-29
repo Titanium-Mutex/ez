@@ -1,7 +1,8 @@
 # ez
-An old fashioned display editor, ez.
+## An old fashioned display editor, ez.
 
-*** default key-define table *** '84.11  NOTE:  ^:control e:escape (mk):marked
+## *** default key-define table *** '84.11  
+NOTE:  ^:control e:escape (mk):marked
 
 ^I,HT:tab.ins.          CR,^M:line ins.         ^P:quoted ins.  ^O:open line
 
